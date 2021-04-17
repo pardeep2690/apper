@@ -15,10 +15,8 @@ Turbolinks.start()
 ActiveStorage.start()
 
 
+import "bootstrap"
 
-$(function() {
-    alert("hello world");
-});
 
 
 
