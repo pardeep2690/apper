@@ -39,5 +39,13 @@ module CustomerHelper
 		def pdfdoc
 			@pdfdoc
 		end
+
+
+
+
+		def save
+			@form.flattenFields()
+			@pdfdoc.close()
+		end
 end
 end
