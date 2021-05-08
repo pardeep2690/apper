@@ -10,12 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_17_161801) do
+ActiveRecord::Schema.define(version: 2021_05_08_051410) do
 
   create_table "blogs", force: :cascade do |t|
     t.integer "user_id"
     t.string "title"
     t.text "content"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "customers", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title"
+    t.string "fname"
+    t.string "mname"
+    t.string "lname"
+    t.date "dob"
+    t.string "aadhaar"
+    t.string "pan"
+    t.string "mob"
+    t.string "pin"
+    t.string "city"
+    t.string "state"
+    t.string "address"
+    t.string "mother_first_name"
+    t.string "mother_middle_name"
+    t.string "mother_last_name"
+    t.string "guardian_first_name"
+    t.string "guardin_middle_name"
+    t.string "guardian_last_name"
+    t.boolean "married"
+    t.boolean "nominee_required"
+    t.string "nominee_name"
+    t.date "nominee_dob"
+    t.string "nominee_address"
+    t.string "cust_id"
+    t.string "account_no"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
